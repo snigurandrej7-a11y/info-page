@@ -1,46 +1,40 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="verify-admitad" content="a6cb0f3f25" />
-    <title>AliExpress Shopping Gateway</title>
+    <title>AliExpress Global Gateway</title>
     <style>
-        body { font-family: -apple-system, sans-serif; background: #f4f4f4; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .card { background: white; padding: 40px; border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; max-width: 380px; width: 90%; }
-        .logo { width: 160px; margin-bottom: 25px; }
-        .status-box { background: #fff1f0; border: 1px solid #ffccc7; padding: 15px; border-radius: 12px; margin-bottom: 20px; }
-        .status-text { color: #cf1322; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
-        .loader { border: 3px solid #f3f3f3; border-top: 3px solid #ff4747; border-radius: 50%; width: 35px; height: 35px; animation: spin 1s linear infinite; margin: 20px auto; }
-        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-        .footer-text { color: #8c8c8c; font-size: 13px; line-height: 1.5; }
+        body { font-family: -apple-system, system-ui, sans-serif; background: #ffffff; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; color: #191919; }
+        .wrapper { text-align: center; max-width: 400px; width: 90%; padding: 40px; border-radius: 30px; box-shadow: 0 20px 50px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; }
+        .logo { width: 180px; margin-bottom: 30px; }
+        .status-pill { display: inline-block; padding: 6px 16px; background: #fff1f0; color: #ff4747; border-radius: 50px; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; }
+        .headline { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+        .subline { font-size: 14px; color: #888; margin-bottom: 30px; }
+        .loader-bar { height: 4px; width: 100%; background: #f5f5f5; border-radius: 10px; overflow: hidden; }
+        .loader-progress { height: 100%; background: linear-gradient(90deg, #ff4747, #ff8c8c); width: 0%; animation: progress 3.5s ease-in-out forwards; }
+        @keyframes progress { 0% { width: 0%; } 100% { width: 100%; } }
     </style>
 </head>
 <body>
 
-<div class="card">
+<div class="wrapper">
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/AliExpress_logo.svg/1200px-AliExpress_logo.svg.png" class="logo" alt="AliExpress">
-    
-    <div class="status-box">
-        <div class="status-text">Активация скидки 90%...</div>
-        <div style="font-size: 12px; color: #555; margin-top: 5px;">Проверка доступных купонов для вашего региона</div>
-    </div>
-
-    <div class="loader"></div>
-    
-    <div class="footer-text">
-        Вы будете автоматически перенаправлены на защищенную страницу распродажи через пару секунд...
-    </div>
+    <div class="status-pill">Global Discount Activated</div>
+    <div class="headline">Applying Best Offers...</div>
+    <div class="subline">Verifying your location for exclusive regional deals.</div>
+    <div class="loader-bar"><div class="loader-progress"></div></div>
+    <div style="margin-top: 15px; font-size: 11px; color: #bbb;">Secure Redirection via AliExpress Partners</div>
 </div>
 
 <script>
-    // Твоя партнерская ссылка
-    var targetUrl = "https://rzekl.com/g/1e779a6676231d866a012a233306c8/";
+    // Твоя мировая ссылка Admitad (она сама определит страну клиента)
+    var globalLink = "https://rzekl.com/g/1e779a6676231d866a012a233306c8/";
 
-    // Переход через 4 секунды
     setTimeout(function(){
-        window.location.href = targetUrl;
-    }, 4000);
+        window.location.href = globalLink;
+    }, 3800);
 </script>
 
 </body>
