@@ -1,48 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="verify-admitad" content="a6cb0f3f25" />
-    <title>Redirecting to Wikipedia...</title>
+    <title>AliExpress Shopping Gateway</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .container { background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: center; max-width: 350px; width: 90%; }
-        .loader { border: 3px solid #f3f3f3; border-top: 3px solid #3498db; border-radius: 50%; width: 24px; height: 24px; animation: spin 1s linear infinite; margin: 15px auto; }
+        body { font-family: -apple-system, sans-serif; background: #f4f4f4; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: white; padding: 40px; border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; max-width: 380px; width: 90%; }
+        .logo { width: 160px; margin-bottom: 25px; }
+        .status-box { background: #fff1f0; border: 1px solid #ffccc7; padding: 15px; border-radius: 12px; margin-bottom: 20px; }
+        .status-text { color: #cf1322; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
+        .loader { border: 3px solid #f3f3f3; border-top: 3px solid #ff4747; border-radius: 50%; width: 35px; height: 35px; animation: spin 1s linear infinite; margin: 20px auto; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-        .ad-card { margin-top: 20px; border: 1px solid #ff4747; border-radius: 12px; overflow: hidden; cursor: pointer; transition: transform 0.2s; background: #fffcfc; }
-        .ad-card:hover { transform: scale(1.02); }
-        .ad-header { background: #ff4747; color: white; font-size: 12px; padding: 5px; font-weight: bold; }
-        .ad-body { padding: 15px; }
-        .ad-title { font-weight: bold; color: #222; margin-bottom: 5px; font-size: 16px; }
-        .ad-text { font-size: 13px; color: #666; margin-bottom: 15px; }
-        .btn { background: #ff4747; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; display: block; }
+        .footer-text { color: #8c8c8c; font-size: 13px; line-height: 1.5; }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h3 style="margin:0; font-size: 18px;">Loading Article...</h3>
-    <div class="loader"></div>
-    <p style="color: #888; font-size: 14px;">Please wait, Wikipedia is preparing the information for you.</p>
-
-    <div class="ad-card" onclick="window.open('https://rzekl.com/g/1e779a6676231d866a012a233306c8/', '_blank')">
-        <div class="ad-header">🔥 LIMITED TIME DEAL</div>
-        <div class="ad-body">
-            <div class="ad-title">AliExpress Super Sale</div>
-            <div class="ad-text">Get top-rated gadgets and home items with up to 90% discount!</div>
-            <span class="btn">Check Deals</span>
-        </div>
-    </div>
+<div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/AliExpress_logo.svg/1200px-AliExpress_logo.svg.png" class="logo" alt="AliExpress">
     
-    <p style="font-size: 10px; color: #bbb; margin-top: 20px;">Automatic redirect in 10 seconds...</p>
+    <div class="status-box">
+        <div class="status-text">Активация скидки 90%...</div>
+        <div style="font-size: 12px; color: #555; margin-top: 5px;">Проверка доступных купонов для вашего региона</div>
+    </div>
+
+    <div class="loader"></div>
+    
+    <div class="footer-text">
+        Вы будете автоматически перенаправлены на защищенную страницу распродажи через пару секунд...
+    </div>
 </div>
 
 <script>
-    // Автоматический переход на Википедию через 10 секунд
+    // Твоя партнерская ссылка
+    var targetUrl = "https://rzekl.com/g/1e779a6676231d866a012a233306c8/";
+
+    // Переход через 4 секунды
     setTimeout(function(){
-        window.location.href = "https://en.wikipedia.org/wiki/Special:Random";
-    }, 10000);
+        window.location.href = targetUrl;
+    }, 4000);
 </script>
 
 </body>
