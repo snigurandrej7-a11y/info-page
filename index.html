@@ -1,1 +1,20 @@
+<script>
+    // Определяем язык браузера
+    const userLang = navigator.language || navigator.userLanguage; 
+    
+    // Тексты для разных языков
+    const content = {
+        'ru': { title: "Ищем информацию...", ad: "СПЕЦПРЕДЛОЖЕНИЕ", btn: "Узнать больше", wait: "Перенаправляем на Wikipedia..." },
+        'en': { title: "Searching for info...", ad: "SPECIAL OFFER", btn: "Learn more", wait: "Redirecting to Wikipedia..." }
+    };
+
+    // Если язык не русский, ставим английский по умолчанию
+    const lang = userLang.includes('ru') ? 'ru' : 'en';
+
+    // Заполняем страницу текстом
+    document.querySelector('h3').innerText = content[lang].title;
+    document.querySelector('.ad-banner b').innerText = content[lang].ad;
+    document.querySelector('button').innerText = content[lang].btn;
+    document.querySelector('.wait-text').innerText = content[lang].wait;
+</script>
 
