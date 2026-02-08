@@ -3,39 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="verify-admitad" content="a6cb0f3f25" />
-    <title>AliExpress Global Gateway</title>
+    <title>Curated Tech | Premium Selection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: -apple-system, system-ui, sans-serif; background: #ffffff; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; color: #191919; }
-        .wrapper { text-align: center; max-width: 400px; width: 90%; padding: 40px; border-radius: 30px; box-shadow: 0 20px 50px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; }
-        .logo { width: 180px; margin-bottom: 30px; }
-        .status-pill { display: inline-block; padding: 6px 16px; background: #fff1f0; color: #ff4747; border-radius: 50px; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; }
-        .headline { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
-        .subline { font-size: 14px; color: #888; margin-bottom: 30px; }
-        .loader-bar { height: 4px; width: 100%; background: #f5f5f5; border-radius: 10px; overflow: hidden; }
-        .loader-progress { height: 100%; background: linear-gradient(90deg, #ff4747, #ff8c8c); width: 0%; animation: progress 3.5s ease-in-out forwards; }
-        @keyframes progress { 0% { width: 0%; } 100% { width: 100%; } }
+        :root {
+            --bg: #f8f9fa;
+            --card: #ffffff;
+            --accent: #1d1d1f; /* Apple Style Black */
+            --text: #3a3a3c;
+            --shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: var(--bg); 
+            color: var(--text); 
+            margin: 0; padding: 0; 
+            display: flex; flex-direction: column; align-items: center;
+        }
+        header { padding: 40px 20px; text-align: center; }
+        h1 { font-weight: 600; letter-spacing: -1px; color: var(--accent); margin-bottom: 5px; }
+        .subtitle { font-weight: 300; font-size: 0.9em; opacity: 0.7; }
+
+        .container { width: 100%; max-width: 450px; padding: 20px; box-sizing: border-box; }
+        
+        .product-card {
+            background: var(--card);
+            border-radius: 24px;
+            padding: 15px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+        .product-card:active { transform: scale(0.98); }
+        
+        .img-container { 
+            width: 100%; height: 350px; 
+            background: #eee; border-radius: 18px; 
+            overflow: hidden; margin-bottom: 15px; 
+        }
+        img { width: 100%; height: 100%; object-fit: cover; }
+
+        .info { padding: 0 10px; text-align: left; }
+        h2 { font-size: 1.2em; margin: 10px 0 5px; color: var(--accent); }
+        .price { font-weight: 600; font-size: 1.1em; color: #000; margin-bottom: 15px; display: block; }
+
+        .btn {
+            display: block;
+            background: var(--accent);
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            border-radius: 14px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+        .btn:hover { opacity: 0.9; }
+
+        footer { 
+            margin-top: 40px; padding: 30px; 
+            font-size: 0.8em; opacity: 0.5; 
+            border-top: 1px solid #ddd; width: 100%; text-align: center;
+        }
     </style>
 </head>
 <body>
 
-<div class="wrapper">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/AliExpress_logo.svg/1200px-AliExpress_logo.svg.png" class="logo" alt="AliExpress">
-    <div class="status-pill">Global Discount Activated</div>
-    <div class="headline">Applying Best Offers...</div>
-    <div class="subline">Verifying your location for exclusive regional deals.</div>
-    <div class="loader-bar"><div class="loader-progress"></div></div>
-    <div style="margin-top: 15px; font-size: 11px; color: #bbb;">Secure Redirection via AliExpress Partners</div>
-</div>
+    <header>
+        <h1>AESTHETIC DEALS</h1>
+        <div class="subtitle">Handpicked innovations for your lifestyle.</div>
+    </header>
 
-<script>
-    // Твоя мировая ссылка Admitad (она сама определит страну клиента)
-    var globalLink = "https://rzekl.com/g/1e779a6676231d866a012a233306c8/";
+    <div class="container">
+        <div class="product-card">
+            <div class="img-container">
+                <img src="ССЫЛКА_НА_КАРТИНКУ_1" alt="MagSafe Power Bank">
+            </div>
+            <div class="info">
+                <h2>Transparent MagSafe Battery Pack</h2>
+                <span class="price">$14.99</span>
+                <a href="ТВОЯ_ССЫЛКА_АДМИТАД" class="btn">View on Marketplace</a>
+            </div>
+        </div>
 
-    setTimeout(function(){
-        window.location.href = globalLink;
-    }, 3800);
-</script>
+        <div class="product-card">
+            <div class="img-container">
+                <img src="ССЫЛКА_НА_КАРТИНКУ_2" alt="Mini Printer">
+            </div>
+            <div class="info">
+                <h2>Inkless Pocket Photo Printer</h2>
+                <span class="price">$19.99</span>
+                <a href="ТВОЯ_ССЫЛКА_АДМИТАД" class="btn">View on Marketplace</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Verified Secure Checkout • Worldwide Shipping</p>
+        <p>© 2026 Global Curation Studio</p>
+    </footer>
 
 </body>
 </html>
